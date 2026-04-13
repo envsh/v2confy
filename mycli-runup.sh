@@ -1,6 +1,21 @@
 #!/bin/sh
 
-./HiddifyCli run --log info --full-config -c ~/.local/share/app.hiddify.com/configs/2c549cdf-baa2-4114-8a3f-a30c3fcff4a2.json -d mycli-config.json
+hiddir=$HOME/.local/share/app.hiddify.com
+
+# 
+ls -lh $hiddir/configs/
+
+# current-config.json will be override when run
+
+specfg=$hiddir/configs/3f0122df-7f20-4ee6-9356-39c84efa7d41.json
+# specfg=V2Ray-Config-By-EbraSha-All-Type.json
+specfg=xpimerge.gen.txt.json
+# ./HiddifyCli parse -o V2Ray-Config-By-EbraSha-All-Type.json V2Ray-Config-By-EbraSha-All-Type.txt
+
+set -x
+exec ./HiddifyCli run --log info --full-config -c $specfg -d mycli-config.json
+
+# see v2ut/readme.md for more collects
 
 # https://hiddify.com/app/HiddifyCli-guide/#run-config-or-subscription-link-in-hiddifycli-with-settings-extracted-from-hiddifyapp
 #

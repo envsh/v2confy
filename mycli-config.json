@@ -24,7 +24,7 @@
   "enable-tun-service": false,
   "set-system-proxy": false,
   "bypass-lan": true,
-  "allow-connection-from-lan": false,
+  "allow-connection-from-lan": true,
   "enable-fake-dns": false,
   "enable-dns-routing": true,
   "independent-dns-cache": true,
