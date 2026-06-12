@@ -15,6 +15,10 @@ specfg=xpimerge.gen.txt.json
 set -x
 exec ./HiddifyCli run --log info --full-config -c $specfg -d mycli-config.json
 
+# ~/.local/share/app.hiddify.com/shared_preferences.json
+# item to mycli-config.json:
+# "flutter.balancer-strategy":"round-robin" => "balancer-strategy":"round-robin"
+
 # see v2ut/readme.md for more collects
 
 # https://hiddify.com/app/HiddifyCli-guide/#run-config-or-subscription-link-in-hiddifycli-with-settings-extracted-from-hiddifyapp

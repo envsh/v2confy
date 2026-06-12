@@ -10,6 +10,7 @@
   "remote-dns-domain-strategy": "",
   "direct-dns-address": "223.5.5.5",
   "direct-dns-domain-strategy": "",
+  "balancer-strategy":"round-robin",
   "mixed-port": 12334,
   "tproxy-port": 12335,
   "local-dns-port": 16450,
